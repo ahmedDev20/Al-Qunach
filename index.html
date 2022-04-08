@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="index.js" defer></script>
+    <title>Al Qunach 📃</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="app-title">Al Qunach</h1>
+
+      <div class="container">
+        <section class="clients">
+          <h1 class="titre">Clients</h1>
+
+          <form id="ajouter-client">
+            <input type="text" required placeholder="Nom" name="nom" />
+            <button><i class="fa fa-plus"></i></button>
+          </form>
+
+          <ul class="clients-list" id="clients-list"></ul>
+        </section>
+
+        <section class="facture">
+          <h1 class="titre">Facture</h1>
+
+          <div class="produits-header">
+            <h3>Produit</h3>
+            <h3>Quantite</h3>
+            <h3>Prix</h3>
+            <h3>Date</h3>
+            <h3>Supprimer</h3>
+          </div>
+
+          <ul class="produits" id="produits"></ul>
+
+          <div class="facture-total">
+            <h2>Total</h2>
+            <h2>650DH</h2>
+          </div>
+        </section>
+
+        <section class="ajouter-produit">
+          <h1 class="titre">Ajouter Produit</h1>
+
+          <form id="ajouter-produit">
+            <input type="text" required placeholder="Nom" name="nom" />
+            <input type="number" required min="1" placeholder="Quantite" name="quantite" />
+            <input type="number" required min="1" placeholder="Prix" name="prix" />
+            <button>Ajouter</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

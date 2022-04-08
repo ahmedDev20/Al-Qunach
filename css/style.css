@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Source+Sans+Pro:wght@600&family=Ubuntu:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(130, 15, 171, 0.1490196078);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+i {
+  border-radius: 50%;
+}
+
+.wrapper {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.wrapper .app-title {
+  text-align: center;
+  color: #864879;
+  font-size: 3em;
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.container section {
+  background-color: white;
+  border-radius: 40px;
+  padding: 1em;
+  flex: 1;
+}
+.container section .titre {
+  font-family: "Nanum Brush Script", cursive;
+  color: #2b2f3e;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+section.clients form {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+section.clients form input {
+  flex: 1;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(130, 15, 171, 0.1490196078);
+  padding: 0.7em 0.8em;
+  border-radius: 20px;
+}
+section.clients form button {
+  background-color: transparent;
+}
+section.clients form button i {
+  background-color: #864879;
+  color: white;
+  padding: 0.8em;
+}
+section.clients .clients-list {
+  list-style: none;
+  margin-top: 1em;
+  max-height: 80%;
+  overflow-y: auto;
+}
+section.clients .clients-list .client-item {
+  cursor: pointer;
+  padding: 0.2em 0.2em;
+  background-color: rgba(130, 15, 171, 0.1490196078);
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 40px;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+section.clients .clients-list .client-item .client-avatar {
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+section.clients .clients-list .client-item p {
+  display: inline-block;
+}
+section.clients .clients-list .client-item.active, section.clients .clients-list .client-item:hover {
+  background-color: #864879;
+}
+section.clients .clients-list .client-item.active .client-nom, section.clients .clients-list .client-item:hover .client-nom {
+  color: white;
+}
+section.clients .clients-list p.no-clients {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.3em;
+}
+
+section.facture {
+  padding: 1.5em;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.facture .produits-header {
+  color: #2b2f3e;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+section.facture .produits-header h3 {
+  flex: 1;
+  text-align: center;
+}
+section.facture .produits {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+}
+section.facture .produits li {
+  display: flex;
+  justify-content: space-between;
+}
+section.facture .produits h3 {
+  flex: 1;
+  text-align: center;
+}
+section.facture .produits .produit {
+  color: rgba(111, 86, 105, 0.4588235294);
+  margin-bottom: 0.5em;
+}
+section.facture .produits .produit i {
+  cursor: pointer;
+  background-color: #864879;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.4em 0.5em;
+}
+section.facture .facture-total {
+  color: #2b2f3e;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.ajouter-produit {
+  height: 50%;
+}
+section.ajouter-produit form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+section.ajouter-produit form input {
+  flex: 1;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(130, 15, 171, 0.1490196078);
+  padding: 0.7em 0.8em;
+  border-radius: 20px;
+}
+section.ajouter-produit form button {
+  background-color: #864879;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 20px;
+  color: white;
+  padding: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */
